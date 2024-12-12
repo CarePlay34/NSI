@@ -19,4 +19,4 @@ for i in range(taille):
     tableau_somme.append(somme)
 
 print("Le nouveau tableau contenant la somme des éléments est :")
-print(tableau_somme)
+print(tableau1,tableau2,tableau_somme)
