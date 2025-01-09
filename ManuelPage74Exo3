@@ -1,0 +1,12 @@
+def extraire_nom_annee(personne):
+    nom_complet, date_naissance = personne
+    
+    prenom, nom = nom_complet
+    
+    jour, mois, annee = date_naissance
+    
+    return (nom, annee)
+
+p = (("Jean", "Dupont"), (15, 3, 1980))
+resultat = extraire_nom_annee(p)
+print(resultat)  

@@ -1,0 +1,20 @@
+def anterieur(d1, d2):
+    j1, m1, a1 = d1
+    j2, m2, a2 = d2
+    if d1[2]<d2[2]:
+        return(f"True")
+    elif d1[1]<d2[1] and d1[2]==d2[2]:
+        return(f"True")
+    elif d1[0]<d2[0] and d1[1]==d2[1] and d1[2]==d2[2]:
+        return(f"True")
+    else:
+        return(f"False")
+    
+def age(d1, d2):
+    j1, m1, a1 = d1
+    j2, m2, a2 = d2
+    return abs(d1[2] - d2[2]) 
+
+d1 = (2, 6, 2024)
+d2 = (5, 6, 2024)
+print(anterieur(d1, d2))
